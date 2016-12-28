@@ -72,7 +72,7 @@ define( function( require ) {
     var options = {
       name: 'Intro', //TODO i18n
       homeScreenIcon: icon,
-      backgroundColorProperty: new Property( Color.toColor( BACKGROUND_COLOR ) ),
+      backgroundColorProperty: new Property( BACKGROUND_COLOR ),
       tandem: tandem
     };
 

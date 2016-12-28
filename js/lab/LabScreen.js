@@ -71,7 +71,7 @@ define( function( require ) {
 
     var options = {
       name: 'Lab', //TODO i18n
-      backgroundColorProperty: new Property( Color.toColor( BACKGROUND_COLOR ) ),
+      backgroundColorProperty: new Property( BACKGROUND_COLOR ),
       homeScreenIcon: icon,
       tandem: tandem
     };
