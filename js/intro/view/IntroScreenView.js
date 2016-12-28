@@ -20,7 +20,7 @@ define( function( require ) {
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
 
   // constants
-  var inset = CircuitConstructionKitConstants.layoutInset;
+  var inset = CircuitConstructionKitConstants.LAYOUT_INSET;
 
   /**
    * @param {CircuitConstructionKitModel} introScreenModel

@@ -18,7 +18,7 @@ define( function( require ) {
   var CircuitConstructionKitConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitConstants' );
 
   // constants
-  var inset = CircuitConstructionKitConstants.layoutInset;
+  var LAYOUT_INSET = CircuitConstructionKitConstants.LAYOUT_INSET;
 
   /**
    * @param {CircuitConstructionKitModel} circuitConstructionKitScreenModel
@@ -47,13 +47,13 @@ define( function( require ) {
       getToolboxPosition: function( visibleBounds ) {
         return {
           centerX: visibleBounds.centerX,
-          bottom: visibleBounds.bottom - inset
+          bottom: visibleBounds.bottom - LAYOUT_INSET
         };
       },
       getCircuitEditPanelLayoutPosition: function( visibleBounds ) {
         return {
-          left: visibleBounds.left + inset,
-          bottom: visibleBounds.bottom - inset
+          left: visibleBounds.left + LAYOUT_INSET,
+          bottom: visibleBounds.bottom - LAYOUT_INSET
         };
       }
     } );
@@ -63,20 +63,20 @@ define( function( require ) {
     this.moveBackgroundToBack();
 
     this.visibleBoundsProperty.link( function( visibleBounds ) {
-      displayOptionsPanel.top = visibleBounds.top + inset;
-      displayOptionsPanel.right = visibleBounds.right - inset;
+      displayOptionsPanel.top = visibleBounds.top + LAYOUT_INSET;
+      displayOptionsPanel.right = visibleBounds.right - LAYOUT_INSET;
 
       self.sensorToolbox.top = displayOptionsPanel.bottom + 10;
       self.sensorToolbox.right = displayOptionsPanel.right;
 
       self.circuitElementToolbox.mutate( {
         centerX: visibleBounds.centerX,
-        bottom: visibleBounds.bottom - inset
+        bottom: visibleBounds.bottom - LAYOUT_INSET
       } );
 
       self.circuitElementEditContainerPanel.mutate( {
-        left: visibleBounds.left + inset,
-        bottom: visibleBounds.bottom - inset
+        left: visibleBounds.left + LAYOUT_INSET,
+        bottom: visibleBounds.bottom - LAYOUT_INSET
       } );
     } );
   }
