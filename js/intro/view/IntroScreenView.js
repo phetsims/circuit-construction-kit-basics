@@ -20,7 +20,7 @@ define( function( require ) {
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
 
   // constants
-  var inset = CircuitConstructionKitConstants.LAYOUT_INSET;
+  var LAYOUT_INSET = CircuitConstructionKitConstants.LAYOUT_INSET;
 
   /**
    * @param {CircuitConstructionKitModel} introScreenModel
@@ -100,14 +100,14 @@ define( function( require ) {
       } );
 
       sceneSelectionRadioButtonGroup.mutate( {
-        left: visibleBounds.left + inset,
-        top: visibleBounds.top + inset
+        left: visibleBounds.left + LAYOUT_INSET,
+        top: visibleBounds.top + LAYOUT_INSET
       } );
 
       // Float the resetAllButton to the bottom right
       resetAllButton.mutate( {
-        right: visibleBounds.right - inset,
-        bottom: visibleBounds.bottom - inset
+        right: visibleBounds.right - LAYOUT_INSET,
+        bottom: visibleBounds.bottom - LAYOUT_INSET
       } );
     } );
   }
