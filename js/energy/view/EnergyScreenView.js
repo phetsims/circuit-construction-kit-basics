@@ -11,19 +11,19 @@ define( function( require ) {
   // modules
   var circuitConstructionKitCommon = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/circuitConstructionKitCommon' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var CCKScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/common/view/CCKScreenView' );
+  var CircuitConstructionKitScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/common/view/CircuitConstructionKitScreenView' );
 
   /**
    * @param {CircuitConstructionKitModel} circuitConstructionKitScreenModel
    * @constructor
    */
   function EnergyScreenView( circuitConstructionKitScreenModel, tandem ) {
-    CCKScreenView.call( this, circuitConstructionKitScreenModel, tandem, {
+    CircuitConstructionKitScreenView.call( this, circuitConstructionKitScreenModel, tandem, {
       toolboxOrientation: 'horizontal'
     } );
   }
 
   circuitConstructionKitCommon.register( 'EnergyScreenView', EnergyScreenView );
 
-  return inherit( CCKScreenView, EnergyScreenView );
+  return inherit( CircuitConstructionKitScreenView, EnergyScreenView );
 } );
