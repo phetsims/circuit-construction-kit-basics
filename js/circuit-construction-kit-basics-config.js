@@ -28,7 +28,7 @@ require.config( {
     // common directories, uppercase names to identify them in require imports
     AXON: '../../axon/js',
     BRAND: '../../brand/' + phet.chipper.brand + '/js',
-    CIRCUIT_CONSTRUCTION_KIT: '../../circuit-construction-kit/js',
+    CIRCUIT_CONSTRUCTION_KIT_COMMON: '../../circuit-construction-kit-common/js',
     DOT: '../../dot/js',
     JOIST: '../../joist/js',
     KITE: '../../kite/js',
@@ -40,6 +40,7 @@ require.config( {
     SCENERY_PHET: '../../scenery-phet/js',
     SUN: '../../sun/js',
     TANDEM: '../../tandem/js',
+    TWIXT: '../../twixt/js',
 
     // this sim
     CIRCUIT_CONSTRUCTION_KIT_BASICS: '.'

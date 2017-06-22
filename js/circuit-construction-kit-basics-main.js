@@ -9,9 +9,9 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var IntroScreen = require( 'CIRCUIT_CONSTRUCTION_KIT/intro/IntroScreen' );
-  var EnergyScreen = require( 'CIRCUIT_CONSTRUCTION_KIT/energy/EnergyScreen' );
-  var LabScreen = require( 'CIRCUIT_CONSTRUCTION_KIT/lab/LabScreen' );
+  var IntroScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_BASICS/intro/IntroScreen' );
+  var EnergyScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_BASICS/energy/EnergyScreen' );
+  var LabScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_BASICS/lab/LabScreen' );
   var Sim = require( 'JOIST/Sim' );
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Tandem = require( 'TANDEM/Tandem' );

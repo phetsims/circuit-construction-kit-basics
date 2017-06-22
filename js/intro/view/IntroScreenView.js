@@ -12,10 +12,10 @@ define( function( require ) {
   // modules
   var circuitConstructionKitCommon = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/circuitConstructionKitCommon' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var IntroSceneNode = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/intro/view/IntroSceneNode' );
+  var IntroSceneNode = require( 'CIRCUIT_CONSTRUCTION_KIT_BASICS/intro/view/IntroSceneNode' );
   var ScreenView = require( 'JOIST/ScreenView' );
-  var IntroSceneModel = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/intro/model/IntroSceneModel' );
-  var SceneSelectionRadioButtonGroup = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/intro/view/SceneSelectionRadioButtonGroup' );
+  var IntroSceneModel = require( 'CIRCUIT_CONSTRUCTION_KIT_BASICS/intro/model/IntroSceneModel' );
+  var SceneSelectionRadioButtonGroup = require( 'CIRCUIT_CONSTRUCTION_KIT_BASICS/intro/view/SceneSelectionRadioButtonGroup' );
   var CircuitConstructionKitConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitConstants' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
 
