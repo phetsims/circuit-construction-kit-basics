@@ -15,10 +15,11 @@ define( function( require ) {
   var CircuitConstructionKitScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CircuitConstructionKitScreenView' );
   var Property = require( 'AXON/Property' );
   var DisplayOptionsPanel = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/DisplayOptionsPanel' );
-  var CircuitConstructionKitConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitConstants' );
+  var CircuitConstructionKitCommonConstants =
+    require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitCommonConstants' );
 
   // constants
-  var LAYOUT_INSET = CircuitConstructionKitConstants.LAYOUT_INSET;
+  var LAYOUT_INSET = CircuitConstructionKitCommonConstants.LAYOUT_INSET;
 
   /**
    * @param {CircuitConstructionKitModel} circuitConstructionKitScreenModel

@@ -15,7 +15,8 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var Screen = require( 'JOIST/Screen' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
-  var CircuitConstructionKitConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitConstants' );
+  var CircuitConstructionKitCommonConstants =
+    require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitCommonConstants' );
   var VBox = require( 'SCENERY/nodes/VBox' );
   var HBox = require( 'SCENERY/nodes/HBox' );
   var Image = require( 'SCENERY/nodes/Image' );
@@ -31,7 +32,7 @@ define( function( require ) {
   var batteryImage = require( 'mipmap!CIRCUIT_CONSTRUCTION_KIT_COMMON/battery.png' );
 
   // constants
-  var BACKGROUND_COLOR = CircuitConstructionKitConstants.BACKGROUND_COLOR;
+  var BACKGROUND_COLOR = CircuitConstructionKitCommonConstants.BACKGROUND_COLOR;
 
   /**
    * @constructor
@@ -43,7 +44,7 @@ define( function( require ) {
     } );
 
     var wireNode = new WireNode( null, null, new Wire( new Vertex( 0, 0 ), new Vertex( 100, 0 ), new Property( 0 ), tandem.createTandem( 'iconWire' ) ), new Property( true ), new Property( 'lifelike' ), tandem.createTandem( 'wireIcon' ) );
-    var resistorNode = new ResistorNode( null, null, new Resistor( new Vertex( 0, 0 ), new Vertex( CircuitConstructionKitConstants.RESISTOR_LENGTH, 0 ), CircuitConstructionKitConstants.DEFAULT_RESISTANCE ),
+    var resistorNode = new ResistorNode( null, null, new Resistor( new Vertex( 0, 0 ), new Vertex( CircuitConstructionKitCommonConstants.RESISTOR_LENGTH, 0 ), CircuitConstructionKitCommonConstants.DEFAULT_RESISTANCE ),
       tandem.createTandem( 'resistorIcon' ), {
         icon: true
       } );
