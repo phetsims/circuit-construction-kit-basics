@@ -45,7 +45,7 @@ define( function( require ) {
 
         _.values( self.sceneNodes ).forEach( function( sceneNode ) {
           sceneNode.reset();
-          sceneNode.circuitConstructionKitModel.reset();
+          sceneNode.model.reset();
         } );
       }
     } );
