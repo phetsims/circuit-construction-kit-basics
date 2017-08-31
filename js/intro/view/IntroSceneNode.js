@@ -75,7 +75,7 @@ define( function( require ) {
         bottom: visibleBounds.bottom - LAYOUT_INSET
       } );
 
-      self.circuitElementEditContainerPanel.mutate( {
+      self.circuitElementEditContainerNode.mutate( {
         left: visibleBounds.left + LAYOUT_INSET,
         bottom: visibleBounds.bottom - LAYOUT_INSET
       } );
