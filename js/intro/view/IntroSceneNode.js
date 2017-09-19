@@ -12,14 +12,14 @@ define( function( require ) {
   // modules
   var circuitConstructionKitCommon = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/circuitConstructionKitCommon' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var CircuitConstructionKitScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CircuitConstructionKitScreenView' );
+  var CCKCScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CCKCScreenView' );
   var Property = require( 'AXON/Property' );
   var DisplayOptionsPanel = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/DisplayOptionsPanel' );
-  var CircuitConstructionKitCommonConstants =
-    require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitCommonConstants' );
+  var CCKCConstants =
+    require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CCKCConstants' );
 
   // constants
-  var LAYOUT_INSET = CircuitConstructionKitCommonConstants.LAYOUT_INSET;
+  var LAYOUT_INSET = CCKCConstants.LAYOUT_INSET;
 
   /**
    * @param {CircuitConstructionKitModel} circuitConstructionKitScreenModel
@@ -37,7 +37,7 @@ define( function( require ) {
       numberOfResistorsInToolbox: 0,
       numberOfSwitchesInToolbox: 0
     }, options );
-    CircuitConstructionKitScreenView.call( this, circuitConstructionKitScreenModel, tandem, {
+    CCKCScreenView.call( this, circuitConstructionKitScreenModel, tandem, {
       toolboxOrientation: 'horizontal',
       numberOfRightBatteriesInToolbox: options.numberOfRightBatteriesInToolbox,
       numberOfLeftBatteriesInToolbox: options.numberOfLeftBatteriesInToolbox,
@@ -84,5 +84,5 @@ define( function( require ) {
 
   circuitConstructionKitCommon.register( 'IntroSceneNode', IntroSceneNode );
 
-  return inherit( CircuitConstructionKitScreenView, IntroSceneNode );
+  return inherit( CCKCScreenView, IntroSceneNode );
 } );

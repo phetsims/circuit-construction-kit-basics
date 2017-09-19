@@ -16,12 +16,12 @@ define( function( require ) {
   var ScreenView = require( 'JOIST/ScreenView' );
   var IntroSceneModel = require( 'CIRCUIT_CONSTRUCTION_KIT_BASICS/intro/model/IntroSceneModel' );
   var SceneSelectionRadioButtonGroup = require( 'CIRCUIT_CONSTRUCTION_KIT_BASICS/intro/view/SceneSelectionRadioButtonGroup' );
-  var CircuitConstructionKitCommonConstants =
-    require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitCommonConstants' );
+  var CCKCConstants =
+    require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CCKCConstants' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
 
   // constants
-  var LAYOUT_INSET = CircuitConstructionKitCommonConstants.LAYOUT_INSET;
+  var LAYOUT_INSET = CCKCConstants.LAYOUT_INSET;
 
   /**
    * @param {CircuitConstructionKitModel} introScreenModel
