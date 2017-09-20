@@ -31,7 +31,6 @@ define( function( require ) {
     var self = this;
     options = _.extend( {
       numberOfRightBatteriesInToolbox: 1,
-      numberOfLeftBatteriesInToolbox: 0,
       numberOfWiresInToolbox: 4,
       numberOfLightBulbsInToolbox: 0,
       numberOfResistorsInToolbox: 0,
@@ -40,7 +39,6 @@ define( function( require ) {
     CCKCScreenView.call( this, circuitConstructionKitScreenModel, tandem, {
       toolboxOrientation: 'horizontal',
       numberOfRightBatteriesInToolbox: options.numberOfRightBatteriesInToolbox,
-      numberOfLeftBatteriesInToolbox: options.numberOfLeftBatteriesInToolbox,
       numberOfWiresInToolbox: options.numberOfWiresInToolbox,
       numberOfLightBulbsInToolbox: options.numberOfLightBulbsInToolbox,
       numberOfResistorsInToolbox: options.numberOfResistorsInToolbox,
