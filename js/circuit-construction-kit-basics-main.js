@@ -17,7 +17,7 @@ define( function( require ) {
   var Tandem = require( 'TANDEM/Tandem' );
 
   // constants
-  var TANDEM = Tandem.createRootTandem();
+  var TANDEM = Tandem.rootTandem;
 
   // strings
   var circuitConstructionKitBasicsTitleString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_BASICS/circuit-construction-kit-basics.title' );
