@@ -17,11 +17,11 @@ define( function( require ) {
   /**
    * @constructor
    */
-  function IntroScreenModel() {
+  function IntroModel() {
     this.selectedSceneProperty = new Property( 0 );
   }
 
-  circuitConstructionKitCommon.register( 'IntroScreenModel', IntroScreenModel );
+  circuitConstructionKitCommon.register( 'IntroModel', IntroModel );
 
-  return inherit( Object, IntroScreenModel );
+  return inherit( Object, IntroModel );
 } );

@@ -16,11 +16,11 @@ define( function( require ) {
   /**
    * @constructor
    */
-  function EnergyScreenModel( tandem ) {
+  function EnergyModel( tandem ) {
     CircuitConstructionKitModel.call( this, tandem );
   }
 
-  circuitConstructionKitCommon.register( 'EnergyScreenModel', EnergyScreenModel );
+  circuitConstructionKitCommon.register( 'EnergyModel', EnergyModel );
 
-  return inherit( CircuitConstructionKitModel, EnergyScreenModel );
+  return inherit( CircuitConstructionKitModel, EnergyModel );
 } );
