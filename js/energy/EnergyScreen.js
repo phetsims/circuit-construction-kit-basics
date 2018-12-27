@@ -10,7 +10,7 @@ define( function( require ) {
 
   // modules
   var circuitConstructionKitCommon = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/circuitConstructionKitCommon' );
-  var EnergyScreenModel = require( 'CIRCUIT_CONSTRUCTION_KIT_BASICS/energy/model/EnergyScreenModel' );
+  var EnergyModel = require( 'CIRCUIT_CONSTRUCTION_KIT_BASICS/energy/model/EnergyModel' );
   var EnergyScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_BASICS/energy/view/EnergyScreenView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Screen = require( 'JOIST/Screen' );
@@ -76,7 +76,7 @@ define( function( require ) {
 
     Screen.call( this,
       function() {
-        return new EnergyScreenModel();
+        return new EnergyModel();
       },
       function( model ) {
         return new EnergyScreenView( model, tandem.createTandem( 'view' ) );
